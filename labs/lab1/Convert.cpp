@@ -40,18 +40,18 @@ int stoic(string c){
 
  void dec2bin(string &decin, string &decout) {	
 	// Int of decimal input
-	cout << "Starting dec2bin\n";
+	//cout << "Starting dec2bin\n";
 	int deci = stoic(decin);
 	cout << "Stoic returns " << deci <<"\n";	
 	// 2,147,483,647 is 10 didgits so array will never be longer than that
 	int decd[10];
 	int i;
 	for(i=0;decd>0;i++){
-		cout << "Processing\t" << i << "\n";
+		//cout << "Processing\t" << i << "\n";
 		decd[i]=deci%2;
 		deci=deci/2;
 	}
-	cout << "Processing done\n";
+	//cout << "Processing done\n";
 	// Debuging output first
 	for(i=i-1;i>=0;i--){
 		cout << decd[i];
